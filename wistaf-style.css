@@ -7,7 +7,6 @@ body {
     width: 100vw;
     line-height: 1.7em;
     margin: 80px 0 0;
-    position: relative;
 }
 
 header {
@@ -114,18 +113,35 @@ nav > ul > li:last-of-type {
     margin-right: 0;
 }
 
+#page-content-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 15px;
+    margin: 110px 10px 20px 15px;
+}
+
 main {
     width: auto;
     background-color: white; 
-    padding: 50px;
-    margin-left: 110px; /*163px;
+    /*padding: 50px;
+/*    margin-left: 110px;*/ 
+    flex: 1 1 0;
+    /*163px;
     /*box-shadow: 0px 0px 6px 6px rgb(ff ff ff / 20%);*/
 }
 
+#homepage-content {
+    margin: 140px 0 0 240px;
+}
+
 #left-nav {
-    position: absolute;
+    display: flex;
+    /*position: absolute;
     left: 20px;
-    top: 70px;
+    top: 70px;*/
+    min-width: 48px;
     max-width: 200px;
     width: auto;/*
     min-width: 87px;
@@ -133,6 +149,7 @@ main {
     /*margin-right: 100px;*/ 
     font-family: "Lato", "Myriad Pro", "Helvetica", sans-serif;
     font-size: 15px;
+    padding-top: 20px;
 }
 
 #left-nav > ul {
