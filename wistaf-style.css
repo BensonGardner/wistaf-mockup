@@ -117,16 +117,17 @@ nav > ul > li:last-of-type {
 main {
     width: auto;
     background-color: white; 
-    padding: 55px 50px;
-    margin-left: 163px;
+    padding: 50px;
+    margin-left: 110px; /*163px;
     /*box-shadow: 0px 0px 6px 6px rgb(ff ff ff / 20%);*/
 }
 
 #left-nav {
     position: absolute;
     left: 20px;
+    top: 70px;
     max-width: 200px;
-    /*width: auto;
+    width: auto;/*
     min-width: 87px;
     padding: 55px 15px 0 0;
     /*margin-right: 100px;*/ 
@@ -246,7 +247,7 @@ a:hover {
 }
 
 #home-container {
-    margin: 0 0 -55px -80px;
+    margin: 0 0 -50px -80px;
     padding-bottom: 100px;
     background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.7), rgba(255,255,255,0));
     z-index: 2;
