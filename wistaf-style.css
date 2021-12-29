@@ -10,10 +10,8 @@ body {
 }
 
 header {
-    /* background: #1683bb;
-    /*  #edf6f7 - light highlight from annual report - it's too light // This #307284 is the color in one version of our logo that I found in our shared drive */
-    color: #dfe0e1;
-    background: #0B73B1; 
+    color: #f0f0f0;
+    background: #0B73B1; /* #0B74B9; /  #1683bb; / #edf6f7 - light highlight from annual report - it's too light /  #307284 is the color in one version of our logo that I found in our shared drive */
     width: 100vw;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -124,7 +122,8 @@ nav > ul > li:last-of-type {
 
 main {
     width: auto;
-    background-color: white; 
+    background-color: white;
+    font-size: 17px;
     /*padding: 50px;
 /*    margin-left: 110px;*/ 
     flex: 1 1 0;
@@ -173,6 +172,28 @@ main {
     font-weight: 500;
 }
 
+#scrl-btn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  left: 95px; 
+  z-index: 99; /* Make sure it does not overlap */
+  border-radius: 30px;
+  border: none; 
+  outline: none; 
+  background-color: #0B74B2;
+  color: white;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; 
+  font-size: 18px;
+  line-height: 1.6em;
+  animation: fadeIn 0.6s;
+}
+
+#scrl-btn:hover {
+  background-color: #F0C169;
+}
+
 h1, h2, h3 {
     font-family: "Lato", "Myriad Pro", sans-serif;
     line-height: 1em;
@@ -202,7 +223,6 @@ h4 {
 }
 
 p {
-    font-size: 16px;
     max-width: 650px;
     min-width: 180px;
 }
@@ -239,7 +259,7 @@ a:hover {
 }
 
 .giant-emphasis {
-    font-size: 64px;
+    font-size: 52px;
     /* color: #1683bb; */
     color: #0B73B1;
     font-family: "Lato", serif;
@@ -353,6 +373,15 @@ footer em {
     background-color: #edf6f7;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media only screen and (max-width: 1047px) {
     #home-container {
         background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.9), rgba(255,255,255,0));
@@ -366,7 +395,7 @@ footer em {
         I know "display:none" is not correct here. I didn't bother to code this version of the menu, since it's just like the test site. */ 
     }
     
-     #home-image {
+    #home-image {
         display: none;
     }
     

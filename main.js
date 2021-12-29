@@ -35,6 +35,29 @@ document.addEventListener('scroll', function(e) {
   }
 });
 
+// I patterned the scroll button code below on some example code at W3 schools.
+
+scrlBtn = document.getElementById("scrl-btn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    console.log("a");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      console.log("b");
+    scrlBtn.style.display = "block";
+  } else {
+    scrlBtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 // This next function isn't working.
 // window.scroll is a function that ctually scrolls the page i thinik. 
 /*
