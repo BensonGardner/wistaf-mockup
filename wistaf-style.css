@@ -133,6 +133,7 @@ main {
     width: auto;
     background-color: white;
     font-size: 17px;
+    padding: 0 15px;
     /*padding: 50px;
 /*    margin-left: 110px;*/ 
     flex: 1 1 0;
@@ -406,13 +407,15 @@ footer em {
     }
 }
 
-@media only screen and (max-width: 1047px) {
+@media only screen and (min-width: 1024px) and (max-width: 1047px) {
+    /* Put an additional white fade on the home page background image at screen sizes where it would otherwise make the text hard to read */
     #home-container {
         background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.9), rgba(255,255,255,0));
     }
 }
 
 @media only screen and (max-width: 1023px) {
+
     nav > ul {
         display: none;
         /* Use a hamburger button like in the test site for the top menu. I designed with 1023px as the appropriate breakpoint so the menu never ends up on two lines. 
@@ -431,6 +434,13 @@ footer em {
         height: 43px;
         -webkit-transition: all 0.2s;
         transition: all 0.2s;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #scrl-btn {
+        left: 50%; 
+        transform: translateX(-50%);
     }
 }
 
@@ -456,6 +466,5 @@ footer em {
     header {
         transition-duration: 0;
         transition-property: none;
-    
     }
 }
