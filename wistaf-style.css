@@ -10,8 +10,8 @@ body {
 }
 
 header {
-    color: #f0f0f0;
-    background: #0B73B1; /* #0B74B9; /  #1683bb; / #edf6f7 - light highlight from annual report - it's too light /  #307284 is the color in one version of our logo that I found in our shared drive */
+    color: #f6f6f6;
+    background: #0B73B1;
     width: 100vw;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -92,31 +92,18 @@ nav {
     padding: 0;
     margin: 0;
     line-height: 1;
-   /* top: 50%;
-    position: absolute;
-}
-
-.shrunk nav {
-    position: static;
-    top: 50%;
-/*    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);*/
 }
 
 nav > ul > li {
     display: inline-block;
     position: relative;
-    margin: 0 6px 0;
+    margin: 0 7px 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 16px;
 }
-
-/*nav > ul > li:first-of-type {
-    margin-left: 0;
-}*/
 
 nav > ul > li:last-of-type {
     margin-right: 0;
@@ -157,24 +144,25 @@ main {
 }
 
 #left-nav {
-    /*min-width: 48px;
-    max-width: 200px;*/
+    background-color: #f4f4f4;
     width: 200px;
-    padding: 55px 15px 0 15px;
+    margin: 25px 0 25px 15px;
+    padding: 15px;
     font-family: "Lato", "Myriad Pro", "Helvetica", sans-serif;
     font-size: 15px;
     padding-top: 20px;
 }
 
 #left-nav > ul, #left-nav > p {
-    margin: 0;
     padding: 0;
 }
 
 .left-menu-title {
     font-weight: 600;
-    background-color: #edf6f7;
-    color: #595f59; /* #d68645; #0B74B2;*/
+    font-size: 17px;
+    margin: -5px 0 -10px 0;
+    background-color: #edf3f7;
+    color: #0B74B2; /* #595f59;  #d68645; */
 }
 
 #left-nav > ul {
@@ -190,6 +178,10 @@ main {
 
 #left-nav li:first-of-type {
     border-top: none;
+}
+
+#left-nav li:last-of-type {
+    padding-bottom: 0;
 }
 
 #left-nav a {
@@ -311,7 +303,7 @@ a:hover {
 }
 
 #home-container {
-    margin: 0 0 -50px -80px;
+    margin: 0 0 -50px -90px;
     padding-bottom: 100px;
     background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.7), rgba(255,255,255,0));
     z-index: 2;
@@ -340,16 +332,14 @@ a:hover {
 }
 
 footer {
-    /*background-color: #d68645;*/
     position: relative;
     bottom: 0;
     font-size: 11px;
     font-family: "Lato", sans-serif;
     margin:  0 0;
     line-height: 1;
-    color: #0B73B1 /*#2f3f3f*/ ;
-    background: #edf6f7;
-        /* #df9050 /* ecd184 /* dfe0e18 / e0e0e0 */ ;
+    color: #0B73B1;
+    background: #edf3f7;
     padding: 10px 20px;
     z-index: 10;
     width: 100vw;
