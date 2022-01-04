@@ -46,9 +46,9 @@ function scrollFunction() {
     console.log("a");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       console.log("b");
-    scrlBtn.style.display = "block";
+    scrlBtn.style.opacity = "1";
   } else {
-    scrlBtn.style.display = "none";
+    scrlBtn.style.opacity = "0";
   }
 }
 
