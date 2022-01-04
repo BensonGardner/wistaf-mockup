@@ -154,7 +154,7 @@ main {
     padding-top: 20px;
 }
 
-#left-nav > ul, p {
+#left-nav > ul, #left-nav > p {
     margin: 0;
     padding: 0;
 }
