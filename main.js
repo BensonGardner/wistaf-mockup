@@ -9,7 +9,6 @@ let lastKnownScrollPosition = 0,
     
 function resizeHeader(scrollSinceLast) {
     if (scrollSinceLast > 0) {
-        console.log("shrinking the header yo");
         header.classList.add("shrunk");
         logo.classList.remove("full-size");
         logo.classList.add("minimized"); 
@@ -17,7 +16,6 @@ function resizeHeader(scrollSinceLast) {
         header.classList.remove("shrunk");
         logo.classList.remove("minimized");
         logo.classList.add("full-size");
-        console.log("make the header bigger")
     }
 }
 
@@ -43,9 +41,7 @@ scrlBtn = document.getElementById("scrl-btn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    console.log("a");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      console.log("b");
     scrlBtn.style.opacity = "1";
   } else {
     scrlBtn.style.opacity = "0";
@@ -57,18 +53,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-// This next function isn't working.
-// window.scroll is a function that ctually scrolls the page i thinik. 
-/*
-window.scroll = () => {
-    scrolling = true;
-};
-
-setInterval(() => {
-    if (scrolling) {
-        console.log('scrolling');
-        scrolling = false;
-        resizeHeader();
-    }
-},300);*/
