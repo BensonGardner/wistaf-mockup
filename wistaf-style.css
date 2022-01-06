@@ -171,6 +171,10 @@ main {
     color: #0B74B2; /* #595f59;  #d68645; */
 }
 
+#left-nav:empty {
+    background-color: white;
+}
+
 #left-nav > ul {
     list-style-type: none;
 }
