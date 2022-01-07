@@ -35,7 +35,16 @@ document.addEventListener('scroll', function(e) {
 
 // I patterned the scroll button code below on some example code at W3 schools.
 
-scrlBtn = document.getElementById("scrl-btn");
+const scrlBtn = document.querySelector("#scrl-btn"),
+      leftNav = document.querySelector("#left-nav"),
+      leftNavEmptyStatus = Boolean(leftNav.childNodes.length);
+
+//Adjust position when left-nav is empty
+document.addEventListener("DOMContentLoaded", function(){
+    if (!leftNavEmptyStatus) {
+        scrlBtn.style.left = "60px";    
+    }
+});
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};

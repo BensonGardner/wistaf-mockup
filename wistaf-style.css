@@ -147,6 +147,7 @@ main {
 
 #homepage-content {
     margin: 140px 0 0 240px;
+    padding: 0 10px;
 }
 
 #left-nav {
@@ -173,6 +174,7 @@ main {
 
 #left-nav:empty {
     background-color: white;
+    width: 100px;
 }
 
 #left-nav > ul {
@@ -202,8 +204,10 @@ main {
   display: block; 
   opacity: 0;
   position: fixed;
+/*  left: 50%;
+  transform: translateX(-50%);*/
   bottom: 20px;
-  left: 90px; 
+  left: 110px;
   z-index: 99; /* Make sure it does not overlap */
   border-radius: 30px;
   border: none; 
