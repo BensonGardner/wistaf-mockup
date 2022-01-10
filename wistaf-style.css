@@ -327,6 +327,8 @@ a:hover {
 #homepage-sub-container {
     display: flex;
     flex-flow: row-reverse wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .centered-container {
@@ -348,11 +350,11 @@ a:hover {
 
 .home-text {
     font-size: 18px;
+    margin: 0 30px 18px 0;*/
 }
 
 .feature-box {
-    position: inline-block;
-    width: 220px;
+    width: 200px;
     background: #f4f4f4;
     padding: 10px;
     border: 1px;
@@ -361,7 +363,7 @@ a:hover {
 }
 
 .feature-box-title {
-    margin: 10px -10px 0;
+    margin: 0 -11px;
     padding: 3px 5px;
     background: #d68645;
     color: #f6f6f6;
@@ -372,9 +374,9 @@ a:hover {
 }
 
 .feature-box-image {
-    max-width: 100%;
+    max-width: 150px;
     text-align: center;
-    margin: 0 auto;
+    margin: 6px auto 16px;
     display: block;
 }
 
