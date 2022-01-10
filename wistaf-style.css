@@ -324,6 +324,11 @@ a:hover {
     position: relative;
 }
 
+#homepage-sub-container {
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
 .centered-container {
     /*display: flex;
     justify-content: space-evenly;
@@ -341,19 +346,41 @@ a:hover {
     opacity: 50%; 
 }
 
-.feature-text {
+.home-text {
     font-size: 18px;
 }
 
 .feature-box {
-    
+    position: inline-block;
+    width: 220px;
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px;
+    font-size: 15px;
+    border: 1px solid #d68645;
 }
 
 .feature-box-title {
-    background: d68645;
+    margin: 10px -10px 0;
+    padding: 3px 5px;
+    background: #d68645;
     color: #f6f6f6;
+    font-size: 18px;
     font-weight: 500;
-    font-family: "Lado", "Myriad Pro", sans-serif;
+    font-family: "Lato", "Myriad Pro", sans-serif;
+    text-align: center;
+}
+
+.feature-box-image {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.feature-box > p {
+    padding: 15px 8px 0;
+    margin: 0;
 }
 
 footer {
