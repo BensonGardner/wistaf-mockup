@@ -19,7 +19,8 @@ header {
     height: 90px;
     padding: 5px;
     margin: 0;
-    box-shadow: 0px 0px 10px 10px rgb(33 33 99 / 20%);
+    box-shadow: 0px 0px 15px 2px rgb(227 178 130 / 50%); /* rgb(241 194 106 / 50%); /* rgb(254 225 130 / 30%); /* 0px 0px 10px 3px rgb(33 33 99 / 20%);/* 0px 0px 10px 10px rgb(33 33 99 / 20%); /* 0px 0px 15px 4px rgb(9 112 174 / 30%); /* 0px 0px 15px 4px rgb(200 160 36 / 30%); /*
+    /*border-bottom: 2px solid #fee182 /* #fdc424 */;
     position: fixed;
     top: 0;
 }
@@ -360,16 +361,25 @@ a:hover {
     border-radius: 5px;
     background: #f4f4f4;
     padding: 10px;
-    border: 1px;
     font-size: 15px;
 }
 
 .feature-box {
     width: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.feature-text {
+    background-color: #0970AE;
+    align-self: stretch;
 }
 
 .feature-box-title {
-    margin: 0 -11px;
+    margin: 0;
     padding: 3px 5px;
     color: #fee79c; /* #d68645; */
     background-color: #0970AE; 
@@ -383,13 +393,14 @@ a:hover {
 .feature-box-image {
     max-width: 150px;
     text-align: center;
-    margin: 6px auto 16px;
+    margin: 16px auto;
     display: block;
 }
 
-.feature-box > p {
+.feature-box p {
     padding: 15px 8px 0;
     margin: 0;
+    color: aliceblue;
 }
 
 footer {
@@ -517,12 +528,32 @@ footer em {
         justify-content: space-between;
         align-items: flex-start;
     }
-    
+}
+
+@media only screen and (min-width: 545px) and (max-width: 1069px) {
     .feature-box {
         width: auto;
-        max-width: 650px;
         margin: 30px 0 0;
+        flex-flow: row;
     }
+    
+    .feature-text {
+        margin: 0;
+        max-width: 500px;
+    }
+    
+    .feature-box-title {
+        margin: 0;
+    }
+    
+    .feature-box-image {
+        max-width: 150px;
+        text-align: center;
+        margin: auto;
+        display: block;
+        margin: auto 16px;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
