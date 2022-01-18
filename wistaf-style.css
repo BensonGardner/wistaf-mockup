@@ -10,8 +10,8 @@ body {
 }
 
 header {
-    color: #f6f6f6;
-    background: #0970AE; /* #0B73B1; */
+    color: #fafafa;
+    background:  #0B73B1; /* #0970AE; */
     width: 100vw;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -19,7 +19,7 @@ header {
     height: 90px;
     padding: 5px;
     margin: 0;
-    box-shadow: 0px 0px 15px 2px rgb(227 178 130 / 50%); /* rgb(241 194 106 / 50%); /* rgb(254 225 130 / 30%); /* 0px 0px 10px 3px rgb(33 33 99 / 20%);/* 0px 0px 10px 10px rgb(33 33 99 / 20%); /* 0px 0px 15px 4px rgb(9 112 174 / 30%); /* 0px 0px 15px 4px rgb(200 160 36 / 30%); /*
+    box-shadow: 0px 0px 8px 2px rgb(221 168 11 / 20%); /* rgb(241 194 106 / 50%); /* rgb(254 225 130 / 30%); /* 0px 0px 10px 3px rgb(33 33 99 / 20%);/* 0px 0px 10px 10px rgb(33 33 99 / 20%); /* 0px 0px 15px 4px rgb(9 112 174 / 30%); /* 0px 0px 15px 4px rgb(200 160 36 / 30%); /*
     /*border-bottom: 2px solid #fee182 /* #fdc424 */;
     position: fixed;
     top: 0;
@@ -95,7 +95,7 @@ nav {
     line-height: 1;
 }
 
-nav > ul > li {
+nav li {
     display: inline-block;
     position: relative;
     margin: 0;
@@ -107,13 +107,27 @@ nav > ul > li {
     font-weight: 300;
 }
 
-nav > ul > li:not(:last-child):after {
+nav li:not(:last-child):after {
     color: lightgrey;
     content: "\a0\a0\a0|\a0\a0";
 } 
 
-nav > ul > li:first-of-type {
+nav li:first-of-type {
     margin-left: 8px;
+}
+
+nav a:link {
+    color: #fafafa;
+    font-weight: 300;
+}
+
+nav a:hover {
+    text-decoration: none;
+    /* My menu code is not set up right, the way yours is on the test site, but on hover could we have the background color turn to #2a99cb */
+}
+
+nav a:visited {
+    color: #fafafa;
 }
 
 #page-content-container {
@@ -214,7 +228,7 @@ main {
   border-radius: 30px;
   border: none; 
   outline: none; 
-  background-color: #0B74B2;
+  background-color: #1683bb;
   color: white;
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 10px; 
@@ -285,7 +299,7 @@ a:link {
 }
 
 a:visited {
-    color: #d68645;
+    color: #dda80b;
     text-decoration: none;
 }
 
@@ -295,8 +309,8 @@ a:hover {
 
 .giant-emphasis {
     font-size: 52px;
-    /* color: #1683bb; */
-    color: #0B73B1;
+    color: #1683bb; 
+    /*color: #0B73B1; */
     font-family: "Lato", serif;
     font-weight: 600;
     margin: 0.25em auto 0.8em;
@@ -356,12 +370,26 @@ a:hover {
     margin: 0 30px 18px 0;*/
 }
 
+.home-text a:hover {
+    color: #dda80b;
+}
+
 .box {
     border: none; /* 1px solid #d68645; */
     border-radius: 5px;
     background: #f4f4f4;
     padding: 10px;
     font-size: 15px;
+}
+
+.box a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.box a:hover {
+    color: #fdd85b;
 }
 
 .feature-box {
@@ -381,8 +409,8 @@ a:hover {
 .feature-box-title {
     margin: 0;
     padding: 3px 5px;
-    color: #fee79c; /* #d68645; */
-    background-color: #0970AE; 
+    color:  #fafafa; /* #d68645;  /*#fee79c;  */
+    background-color: #1683bb; 
     /* color: #f6f6f6; */
     font-size: 18px;
     font-weight: 500;
@@ -401,6 +429,15 @@ a:hover {
     padding: 15px 8px 0;
     margin: 0;
     color: aliceblue;
+}
+
+top-task-section {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+top-task {
+    width: 20px;
 }
 
 footer {
@@ -427,7 +464,7 @@ footer p {
 }
 
 footer h2 {
-    color: #d68645;
+    color:  #dda80b; /*#c0a259;  /*#d68645; */
     text-align: center;
     margin-bottom: 0;
 }
