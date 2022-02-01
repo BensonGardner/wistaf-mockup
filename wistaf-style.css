@@ -349,10 +349,19 @@ a:hover {
 }
 
 .centered-container {
-    /*display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px auto 0;
+    gap: 0 20px;
+}
+
+.vertical-line {
+    background-color: #dda80b;
+    width: 1px;
+    font-size: 24px;
+    line-height: 1.7em;
+    flex: 0 0 auto;
 }
 
 #home-image {
@@ -463,6 +472,11 @@ a:hover {
     text-align: center;
 }
 
+.top-task img {
+    width: 100%;
+    margin: 0;
+}
+
 .top-task a {
     text-decoration: none;
     font-weight: 800;
@@ -473,7 +487,7 @@ footer {
     bottom: 0;
     font-size: 11px;
     font-family: "Lato", sans-serif;
-    margin:  0 0;
+    margin: 0 0;
     line-height: 1;
     color: #0B73B1;
     background: #edf3f7;
@@ -494,7 +508,17 @@ footer p {
 footer h2 {
     color:  #dda80b; /*#c0a259;  /*#d68645; */
     text-align: center;
-    margin-bottom: 0;
+    display: inline-block;
+    margin: 0;
+    flex: 1 0 auto;
+}
+
+.tagline {
+    display: inline-block;
+    color: #dda80b;
+    font-size: 18px;
+    flex: 2 0 auto;
+/*    font-style: italic;*/
 }
 
 footer a {
