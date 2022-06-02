@@ -349,19 +349,10 @@ a:hover {
 }
 
 .centered-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 6px auto 0;
-    gap: 0 20px;
-}
-
-.vertical-line {
-    background-color: #dda80b;
-    width: 1px;
-    font-size: 24px;
-    line-height: 1.7em;
-    flex: 0 0 auto;
+    /*display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;*/
 }
 
 #home-image {
@@ -389,6 +380,15 @@ a:hover {
     background: #f4f4f4;
     padding: 10px;
     font-size: 15px;
+    margin: 40px 15px 30px;
+}
+
+/*.box:last-child {
+    margin-right: 0;
+}*/
+
+.box:first-child {
+    margin-left: 0;
 }
 
 .box a {
@@ -440,9 +440,10 @@ a:hover {
     color: aliceblue;
 }
 
-top-task-section {
+#top-task-boxes {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row nowrap;
+    font-family: "Lato", "Myriad Pro", sans-serif;
 }
 
 #top-task-section {
@@ -460,12 +461,6 @@ top-task-section {
     min-width: 70px;
     color: #1683bb;
     text-align: center;
-    width: 20px;
-}
-
-.top-task img {
-    width: 100%;
-    margin: 0;
 }
 
 .top-task a {
@@ -478,7 +473,7 @@ footer {
     bottom: 0;
     font-size: 11px;
     font-family: "Lato", sans-serif;
-    margin: 0 0;
+    margin:  0 0;
     line-height: 1;
     color: #0B73B1;
     background: #edf3f7;
@@ -499,17 +494,7 @@ footer p {
 footer h2 {
     color:  #dda80b; /*#c0a259;  /*#d68645; */
     text-align: center;
-    display: inline-block;
-    margin: 0;
-    flex: 1 0 auto;
-}
-
-.tagline {
-    display: inline-block;
-    color: #dda80b;
-    font-size: 18px;
-    flex: 2 0 auto;
-/*    font-style: italic;*/
+    margin-bottom: 0;
 }
 
 footer a {
