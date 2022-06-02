@@ -445,7 +445,6 @@ top-task-section {
     flex-flow: column wrap;
 }
 
-<<<<<<< HEAD
 #top-task-section {
     background: aliceblue;
     margin: 20px 0;
@@ -461,6 +460,7 @@ top-task-section {
     min-width: 70px;
     color: #1683bb;
     text-align: center;
+    width: 20px;
 }
 
 .top-task img {
@@ -471,10 +471,6 @@ top-task-section {
 .top-task a {
     text-decoration: none;
     font-weight: 800;
-=======
-top-task {
-    width: 20px;
->>>>>>> parent of 03098d2... Make top task items into proper boxes
 }
 
 footer {
