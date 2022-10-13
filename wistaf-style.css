@@ -10,8 +10,8 @@ body {
 }
 
 header {
-    color: #fafafa;
-    background:  #0B73B1; /* #0970AE; */
+    color: #385191;
+    background:  #fff; /* #0970AE; */
     width: 100vw;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -89,7 +89,7 @@ header {
 nav {
     font-family: "Myriad Pro", "Helvetica", sans-serif;
     text-decoration: none;
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
     line-height: 1;
@@ -107,6 +107,12 @@ nav li {
     font-weight: 300;
 }
 
+nav li::before {
+    content: none;  /* Override other ul settings */
+    width: auto; /* Also needed for space  */
+    margin-left: auto; /* Also needed for space */
+}
+
 nav li:not(:last-child):after {
     color: lightgrey;
     content: "\a0\a0\a0|\a0\a0";
@@ -117,7 +123,7 @@ nav li:first-of-type {
 }
 
 nav a:link {
-    color: #fafafa;
+    color: #385191;
     font-weight: 300;
 }
 
@@ -127,7 +133,7 @@ nav a:hover {
 }
 
 nav a:visited {
-    color: #fafafa;
+    color: #385191;
 }
 
 #page-content-container {
@@ -156,6 +162,7 @@ main {
     /*padding: 50px;
 /*    margin-left: 110px;*/ 
     flex: 1 1 0;
+    max-width: 650px;
     /*163px;
     /*box-shadow: 0px 0px 6px 6px rgb(ff ff ff / 20%);*/
 }
@@ -163,6 +170,7 @@ main {
 #homepage-content {
     margin: 140px 0 0 240px;
     padding: 0 10px;
+    max-width: none;
 }
 
 #left-nav {
@@ -228,7 +236,7 @@ main {
   border-radius: 30px;
   border: none; 
   outline: none; 
-  background-color: #1683bb;
+  background-color: #385191;
   color: white;
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 10px; 
@@ -249,7 +257,7 @@ h1, h2, h3 {
 }
 
 h1, h2 {
-    color: #1683bb;
+    color: #385191;
 }
 
 h1 {
@@ -272,7 +280,6 @@ h4 {
 }
 
 p {
-    max-width: 650px;
     min-width: 180px;
 }
 
@@ -281,7 +288,7 @@ ul {
     list-style-type: none; /* Remove default bullets */
 }
 
-ul li::before {
+.regular-bullet-list li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: #657279; /* Change the color */
     display: inline-block; /* Needed to add space between the bullet and the text */
@@ -299,7 +306,7 @@ a:link {
 }
 
 a:visited {
-    color: #dda80b;
+    color: #385191;
     text-decoration: none;
 }
 
@@ -309,7 +316,7 @@ a:hover {
 
 .giant-emphasis {
     font-size: 52px;
-    color: #1683bb; 
+    color: #385191; 
     /*color: #0B73B1; */
     font-family: "Lato", serif;
     font-weight: 600;
@@ -320,7 +327,7 @@ a:hover {
 
 .lesser-emphasis {
     font-size: 20px;
-    color: #0B73B1;
+    color: #385191;
     font-family: "Lato", serif;
     font-weight: 600;
     margin: 0 auto 0.6em 0;
@@ -367,7 +374,8 @@ a:hover {
 
 .home-text > p {
     font-size: 18px;
-    margin: 0 30px 18px 0;*/
+    margin: 0 30px 18px 0;
+    max-width: 650px;
 }
 
 .home-text a:hover {
@@ -401,6 +409,15 @@ a:hover {
     color: #fdd85b;
 }
 
+#news-flash {
+    display: none;
+    max-width: 985px; 
+}
+
+#news-flash > p {
+    max-width: 100%;
+}
+
 .feature-box {
     width: 200px;
     display: flex;
@@ -411,7 +428,7 @@ a:hover {
 }
 
 .feature-text {
-    background-color: #0970AE;
+    background-color: #385191;
     align-self: stretch;
 }
 
@@ -475,7 +492,7 @@ footer {
     font-family: "Lato", sans-serif;
     margin:  0 0;
     line-height: 1;
-    color: #0B73B1;
+    color: #385191;
     background: #edf3f7;
     padding: 10px 20px;
     z-index: 10;
@@ -503,7 +520,7 @@ footer a {
 }
 
 footer a:visited {
-    color: #0B73B1;
+    color: #385191;
 }
 
 footer em {
