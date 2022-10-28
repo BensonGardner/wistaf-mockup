@@ -7,6 +7,11 @@ let lastKnownScrollPosition = 0,
 
 // The problem seems to be with the class and size reassignments -- header and logo. The console log statements are working, so need to figure out why the style properties aren't showing up as changed. Could height be overridign maxheight/
     
+
+/// INSTEAD OFTHIS apparoch, make the logo disappear and make the icon appear. Add 
+// transition dissolves to both. monkey with the position as necessary. ALSO
+// be sure to be designing for mbile first (which you havne't  been :) )
+
 function resizeHeader(scrollSinceLast) {
     if (scrollSinceLast > 0) {
         header.classList.add("shrunk");

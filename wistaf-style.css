@@ -1,8 +1,8 @@
 body {
     background: #fff;
     color: #2f3f3f;
-    font-family: "Newsreader", serif;
-    font-weight: 500;
+    font-family: "Noto Serif", "Newsreader", serif;
+    /*If we stick with 400, delete this line bc 400 is the default font-weight: 400;*/
     letter-spacing: -0.2px;
     width: 100vw;
     line-height: 1.7em;
@@ -19,7 +19,7 @@ header {
     height: 90px;
     padding: 5px;
     margin: 0;
-    box-shadow: 0px 0px 8px 2px rgb(221 168 11 / 20%); /* rgb(241 194 106 / 50%); /* rgb(254 225 130 / 30%); /* 0px 0px 10px 3px rgb(33 33 99 / 20%);/* 0px 0px 10px 10px rgb(33 33 99 / 20%); /* 0px 0px 15px 4px rgb(9 112 174 / 30%); /* 0px 0px 15px 4px rgb(200 160 36 / 30%); /*
+    box-shadow: 0px 0px 8px 2px rgb(255 226 161 / 40%); /* rgb(241 194 106 / 50%); /* rgb(254 225 130 / 30%); /* 0px 0px 10px 3px rgb(33 33 99 / 20%);/* 0px 0px 10px 10px rgb(33 33 99 / 20%); /* 0px 0px 15px 4px rgb(9 112 174 / 30%); /* 0px 0px 15px 4px rgb(200 160 36 / 30%); /*
     /*border-bottom: 2px solid #fee182 /* #fdc424 */;
     position: fixed;
     top: 0;
@@ -45,6 +45,7 @@ header {
 #wistaf-logo {
     float: left;
     position: relative;
+    content: url("img/wistaf-logo-horiz.jpg");
     /*top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);*/
@@ -63,6 +64,7 @@ header {
     max-height: 90px;
     margin: 0 28px;
     height: auto;
+    content: url(img/wistaf-icon.jpg);
 }
 
 .shrunk #site-title {
@@ -73,8 +75,8 @@ header {
     /*max-width: 100%;
     min-height: 90%;*/
     font-size: 50px;
-    font-family: "Myriad Pro", sans-serif;
-    font-weight: 600;
+    font-family: "Source Sans Pro", "Myriad Pro", "Source Sans Pro Pro", sans-serif;
+    font-weight: SemiBold;
     letter-spacing: -0.0px;
     padding: 22px 0 0 154px;/*
     text-align: center;
@@ -87,7 +89,7 @@ header {
 }
 
 nav {
-    font-family: "Myriad Pro", "Helvetica", sans-serif;
+    font-family: "Source Sans Pro", "Noto Serif", sans-serif;
     text-decoration: none;
     list-style-type: none;
     padding: 0;
@@ -103,8 +105,8 @@ nav li {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: .95rem;
+    font-weight: bolder;
 }
 
 nav li::before {
@@ -146,7 +148,7 @@ nav a:visited {
 }
 
 #social-icons {
-    text-align: center;
+    padding-left: 30px;
 }
 
 #social-icons img {
@@ -176,9 +178,9 @@ main {
 #left-nav {
     background-color: #f4f4f4;
     width: 200px;
-    margin: 25px 0 25px 15px;
+    margin: 25px 15px 25px 15px;
     padding: 15px;
-    font-family: "Lato", "Myriad Pro", "Helvetica", sans-serif;
+    font-family: "Source Sans Pro", "Myriad Pro", "Helvetica", sans-serif;
     font-size: 15px;
     padding-top: 20px;
     border-radius: 5px;
@@ -192,7 +194,7 @@ main {
     font-weight: 600;
     font-size: 17px;
     margin: -5px 0 -10px 0;
-    background-color: #edf3f7;
+    background-color: #A9CDD8;
     color: #0B74B2; /* #595f59;  #d68645; */
 }
 
@@ -230,7 +232,7 @@ main {
   position: fixed;
 /*  left: 50%;
   transform: translateX(-50%);*/
-  bottom: 20px;
+  bottom: 300px;
   left: 110px;
   z-index: 99; /* Make sure it does not overlap */
   border-radius: 30px;
@@ -252,7 +254,7 @@ main {
 }
 
 h1, h2, h3 {
-    font-family: "Lato", "Myriad Pro", sans-serif;
+    font-family: "Source Sans Pro", "Kanit", "Myriad Pro", sans-serif;
     line-height: 1em;
 }
 
@@ -261,7 +263,8 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 2.6rem;
+    font-weight: 700;
 }
 
 h2 {
@@ -318,8 +321,8 @@ a:hover {
     font-size: 52px;
     color: #385191; 
     /*color: #0B73B1; */
-    font-family: "Lato", serif;
-    font-weight: 600;
+    font-family: "Source Sans Pro", "Lato", serif;
+    font-weight: 700; /*600;*/
     margin: 0.25em auto 0.8em;
     line-height: 1.15;
     max-width: 100%;
@@ -328,7 +331,7 @@ a:hover {
 .lesser-emphasis {
     font-size: 20px;
     color: #385191;
-    font-family: "Lato", serif;
+    font-family: "Kanit", "Source Sans Pro", serif;
     font-weight: 600;
     margin: 0 auto 0.6em 0;
     line-height: 1.1;
@@ -356,6 +359,11 @@ a:hover {
 }
 
 .centered-container {
+    position: absolute;
+    left: 270px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     /*display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -440,7 +448,7 @@ a:hover {
     /* color: #f6f6f6; */
     font-size: 18px;
     font-weight: 500;
-    font-family: "Lato", "Myriad Pro", sans-serif;
+    font-family: "Kanit", "Source Sans Pro", "Myriad Pro", sans-serif;
     text-align: center;
 }
 
@@ -460,7 +468,7 @@ a:hover {
 #top-task-boxes {
     display: flex;
     flex-flow: row nowrap;
-    font-family: "Lato", "Myriad Pro", sans-serif;
+    font-family: "Kanit", "Source Sans Pro", "Myriad Pro", sans-serif;
 }
 
 #top-task-section {
@@ -488,49 +496,48 @@ a:hover {
 footer {
     position: relative;
     bottom: 0;
-    font-size: 11px;
-    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-family: "Source Sans Pro", "Lato", sans-serif;
     margin:  0 0;
     line-height: 1;
-    color: #385191;
-    background: #edf3f7;
+    color: #ffffff;
+    background: #385183;
     padding: 10px 20px;
     z-index: 10;
     width: 100vw;
     box-shadow: 0px 0px 16px 10px rgb(255 255 255 / 100%);
 }
 
+#footer-logo {
+    padding-left: 18px;
+    margin-bottom: -12px;
+}
+
 footer p {
     font-size: 13px;
-    text-align: center;
     max-width: 100%;
+    padding-left: 33px;
     margin-bottom: 15px;
     line-height: 1.3;
 }
 
-footer h2 {
-    color:  #dda80b; /*#c0a259;  /*#d68645; */
-    text-align: center;
-    margin-bottom: 0;
-}
-
-footer a {
-    text-decoration: none;
+footer a:link {
+    color: #fff; /*#A9CDD8;*/
+    text-decoration: underline;
     font-weight: 800;
 }
 
 footer a:visited {
-    color: #385191;
+    color: #fff; /*#A9CDD8;*/
 }
 
 footer em {
     font-style: normal;
-    /*color: #d68645;*/
     font-size: 14px;
 }
 
 #web-dev {
-    font-size: 9px;
+    font-size: 10px;
 }
 
 .col-sm-12 {
