@@ -1,6 +1,5 @@
-// Have to amke the crl btn not appear when page is scrolled up or down to the point where hte leftnav appears.
 
-// The hamburger menu is now appearing on top of the wistf logo. did remove a "centered container" div?
+// Hamburger menu needs to be bblue
 
 const header = document.getElementById("site-header"),
       logo = document.getElementById("wistaf-logo");
@@ -8,17 +7,6 @@ const header = document.getElementById("site-header"),
 let lastKnownScrollPosition = 0,
     ticking = false,
     scrollSinceLast = 0;
-
-// The problem seems to be with the class and size reassignments -- header and logo. The console log statements are working, so need to figure out why the style properties aren't showing up as changed. Could height be overridign maxheight/
-    
-
-
-
-/// INSTEAD OFTHIS apparoch, make the logo disappear and make the icon appear. Add 
-// transition dissolves to both. monkey with the position as necessary. ALSO
-// be sure to be designing for mbile first (which you havne't  been :) 
-// MIGHT BE BETTER TO ASK ZOLTAN TO ADD THE TANSITON SINCE ITS A BEAAST.
-// Also, we don't really need the icon. Also, do we want the scroll button to appear whener the logo is? nah, prob not.)
 
 function resizeHeader(scrollSinceLast) {
     if (scrollSinceLast > 0) {
@@ -49,28 +37,20 @@ document.addEventListener('scroll', function(e) {
 // I patterned the scroll button code below on some example code at W3 schools.
 
 const scrlBtn = document.querySelector("#scrl-btn"),
-      leftNav = document.querySelector("#left-nav"),
-      leftNavEmptyStatus = Boolean(leftNav.childNodes.length);
+      leftNav = document.querySelector("#left-nav");
 
-//Adjust position when left-nav is empty
-document.addEventListener("DOMContentLoaded", function(){
-    if (!leftNavEmptyStatus) {
-        scrlBtn.style.left = "60px";    
-    }
-});
-
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 300px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     scrlBtn.style.opacity = "1";
   } else {
     scrlBtn.style.opacity = "0";
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// When the user clicks on the button, scroll to the top of the document. It would be nice to make this smoother, but doing that requires some fancy footwork that wasn't necessary for this mockup
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
