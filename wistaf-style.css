@@ -46,6 +46,7 @@ header {
     float: left;
     position: relative;
     content: url("img/wistaf-logo-horiz.jpg");
+    transition: 
     /*top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);*/
@@ -61,10 +62,7 @@ header {
 }
 
 .minimized {
-    max-height: 90px;
-    margin: 0 28px;
-    height: auto;
-    content: url(img/wistaf-icon.jpg);
+    display: none;
 }
 
 .shrunk #site-title {
@@ -177,8 +175,8 @@ main {
 
 #left-nav {
     background-color: #f4f4f4;
-    width: 200px;
-    margin: 25px 15px 25px 15px;
+    width: 225px;
+    margin: 25px 5px 25px 0;
     padding: 15px;
     font-family: "Source Sans Pro", "Myriad Pro", "Helvetica", sans-serif;
     font-size: 15px;
@@ -200,7 +198,7 @@ main {
 
 #left-nav:empty {
     background-color: white;
-    width: 100px;
+    /*width: 100px;*/
 }
 
 #left-nav > ul {
@@ -233,7 +231,7 @@ main {
 /*  left: 50%;
   transform: translateX(-50%);*/
   bottom: 300px;
-  left: 110px;
+  left: 115px;
   z-index: 99; /* Make sure it does not overlap */
   border-radius: 30px;
   border: none; 
@@ -321,7 +319,7 @@ a:hover {
     font-size: 52px;
     color: #385191; 
     /*color: #0B73B1; */
-    font-family: "Source Sans Pro", "Lato", serif;
+    font-family: "Source Sans Pro", "Lato", sans-serif;
     font-weight: 700; /*600;*/
     margin: 0.25em auto 0.8em;
     line-height: 1.15;
@@ -331,7 +329,7 @@ a:hover {
 .lesser-emphasis {
     font-size: 20px;
     color: #385191;
-    font-family: "Kanit", "Source Sans Pro", serif;
+    font-family: "Source Sans Pro", "Lato", sans-serif;
     font-weight: 600;
     margin: 0 auto 0.6em 0;
     line-height: 1.1;
