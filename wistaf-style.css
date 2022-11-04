@@ -87,7 +87,7 @@ header {
 }
 
 nav {
-    font-family: "Source Sans Pro", "Noto Serif", sans-serif;
+    font-family: "Source Sans Pro", "Noto Serif", sans-serif; /*"Kanit"*/
     text-decoration: none;
     list-style-type: none;
     padding: 0;
@@ -103,7 +103,7 @@ nav li {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: .95rem;
+    font-size: 1.05rem;
     font-weight: bolder;
 }
 
@@ -115,7 +115,7 @@ nav li::before {
 
 nav li:not(:last-child):after {
     color: lightgrey;
-    content: "\a0\a0\a0|\a0\a0";
+    content: "\a0\a0\a0\a0\a0\a0\a0\a0";
 } 
 
 nav li:first-of-type {
@@ -144,7 +144,7 @@ nav a:visited {
     padding: 1px 8px 3px 10px;
     color: #A3343D;
     font-family: "Kanit", "Source Sans Pro";
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-left: 15px;
 }
 /*
@@ -194,8 +194,10 @@ main {
 }
 
 #left-nav {
-    background-color: #f4f4f4;
+    background-color: #FFE2A1; /*#f4f4f4;*/
     width: 225px;
+    /* Set limit on size and number of links in left-nav */
+    max-height: 400px;
     margin: 25px 5px 25px 0;
     padding: 15px;
     font-family: "Source Sans Pro", "Myriad Pro", "Helvetica", sans-serif;
@@ -211,6 +213,7 @@ main {
 }
 
 .left-menu-title {
+    font-family: "Kanit", "Source Sans Pro", sans-serif;
     font-weight: 600;
     font-size: 17px;
     margin: -5px 0 -10px 0;
