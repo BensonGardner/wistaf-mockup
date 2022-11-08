@@ -1,6 +1,3 @@
-
-// Hamburger menu needs to be bblue
-
 const header = document.getElementById("site-header"),
       logo = document.getElementById("wistaf-logo");
 
@@ -8,15 +5,14 @@ let lastKnownScrollPosition = 0,
     ticking = false,
     scrollSinceLast = 0;
 
+//If possible, please add a short transition to the logo resizing
 function resizeHeader(scrollSinceLast) {
     if (scrollSinceLast > 0) {
         header.classList.add("shrunk");
-        logo.style.display = "none";
-        //logo.classList.add("minimized"); 
+        logo.style.maxHeight = "43px"; 
     } else if (window.scrollY < 5)  {
         header.classList.remove("shrunk");
-        logo.style.display = "block";
-        //logo.classList.add("full-size");
+        logo.style.maxHeight = "90px";
     }
 }
 

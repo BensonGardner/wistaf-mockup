@@ -38,15 +38,13 @@ header {
 
 .shrunk {
     height: 43px;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
 }
 
 #wistaf-logo {
     float: left;
     position: relative;
     content: url("img/wistaf-logo-horiz.jpg");
-    transition: 
+    max-height: 90px;
     /*top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);*/
@@ -147,14 +145,10 @@ nav a:visited {
     font-size: 1.4rem;
     margin-left: 15px;
 }
-/*
-#donate a:link {
-     color: #A3343D; 
-}
 
-#donate a:visited {
-     color: #A3343D; 
-}*/
+#donate a:hover {
+    text-decoration: underline;
+}
 
 #page-content-container {
     display: flex;
@@ -273,7 +267,8 @@ main {
 }
 
 #scrl-btn:hover {
-  background-color: #F0C169;
+  background-color: #FFE2A1;
+  color: #38518E;
 }
 
 h1, h2, h3 {
@@ -582,18 +577,11 @@ footer em {
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1047px) {
-    /* Put an additional white fade on the home page background image at screen sizes where it would otherwise make the text hard to read */
-    #home-container {
-        background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.9), rgba(255,255,255,0));
-    }
-}
-
-@media only screen and (max-width: 1209px) {
+@media only screen and (max-width: 1114px) {
 
     nav > ul {
         display: none;
-        /* Use a hamburger button like in the test site for the top menu. I designed with 1023px as the appropriate breakpoint so the menu never ends up on two lines. 
+        /* Use a hamburger button like in the test site for the top menu. I designed with 1114px as the breakpoint so the menu never ends up on two lines. 
         I know "display:none" is not correct here. I didn't bother to code this version of the menu, since it's just like the test site. */ 
     }
     
@@ -611,6 +599,10 @@ footer em {
         -webkit-transition: all 0.2s;
         transition: all 0.2s;
     }
+    
+    #wistaf-logo {
+        max-height: 43px;
+    }
 }
 
 @media only screen and (max-width: 590px) {
@@ -625,8 +617,6 @@ footer em {
         width: 100%;
     }
 }
-
-
 
 @media only screen and (max-width: 1069px) {
     #homepage-sub-container {
