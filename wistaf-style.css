@@ -87,7 +87,7 @@ header {
 }
 
 nav {
-    font-family: "Source Sans Pro", "Noto Serif", sans-serif; /*"Kanit"*/
+    font-family: "Kanit", "Source Sans Pro", "Noto Serif", sans-serif; /*"Kanit"*/
     text-decoration: none;
     list-style-type: none;
     padding: 0;
@@ -123,7 +123,7 @@ nav li:first-of-type {
 }
 
 nav a:link {
-    color: #385191;
+    color: #38518E;
     font-weight: 300;
 }
 
@@ -133,7 +133,7 @@ nav a:hover {
 }
 
 nav a:visited {
-    color: #385191;
+    color: #38518E;
 }
 
 #donate {
@@ -217,8 +217,7 @@ main {
     font-weight: 600;
     font-size: 17px;
     margin: -5px 0 -10px 0;
-    background-color: #A9CDD8;
-    color: #0B74B2; /* #595f59;  #d68645; */
+    color: #38518E; /* #595f59;  #d68645; */
 }
 
 #left-nav:empty {
@@ -245,7 +244,7 @@ main {
     padding-bottom: 0;
 }
 
-#left-nav a {
+#left-nav a:link {
     font-weight: 500;
 }
 
@@ -262,7 +261,7 @@ main {
   border-radius: 30px;
   border: none; 
   outline: none; 
-  background-color: #385191;
+  background-color: #38518E;
   color: white;
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 10px; 
@@ -283,7 +282,7 @@ h1, h2, h3 {
 }
 
 h1, h2 {
-    color: #385191;
+    color: #38518e;
 }
 
 h1 {
@@ -296,7 +295,7 @@ h2 {
 }
 
 h3 {
-    color: #d68645;
+    color: #A3343D;
     font-size: 17px;
 } 
 
@@ -392,16 +391,6 @@ a:hover {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;*/
-}
-
-#home-image {
-    z-index: 1;
-    position: fixed;
-    right: 80px;
-    top: 160px;
-/*    width: 40%;*/
-    max-width: 50%;
-    opacity: 50%; 
 }
 
 .home-text > p {
@@ -600,7 +589,7 @@ footer em {
     }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1209px) {
 
     nav > ul {
         display: none;
@@ -611,10 +600,6 @@ footer em {
     #hamburger-menu {
         visibility: visible;
         /* The hamburger menu icon may not be the best; I just wanted to put something there to demonstrate that there would be a hamburger menu in mobile */
-    }
-    
-    #home-image {
-        display: none;
     }
     
     #site-title {
@@ -685,13 +670,6 @@ footer em {
     .col-sm-6 {
         float: left;
         margin: 15px;
-    }
-}
-
-@media only screen and (min-width: 1394px) {
-    #home-image {
-        right: auto;
-        left: 750px;
     }
 }
 
