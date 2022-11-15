@@ -379,6 +379,7 @@ a:hover {
 .centered-container {
     position: absolute;
     left: 270px;
+    height: 54px;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
