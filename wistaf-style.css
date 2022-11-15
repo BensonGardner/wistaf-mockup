@@ -26,10 +26,9 @@ header {
 }
 
 #hamburger-menu {
-    position: absolute;
     visibility: hidden;
-    right: 50px;
-    top: 12px;
+    /* This hamburger icon is not appearing in the right place, but I know
+       that you know how to make it work */
 }
 
 #hamburger-menu > img {
@@ -127,6 +126,7 @@ nav a:link {
 
 nav a:hover {
     text-decoration: none;
+    color: #CC4C27;
     /* My menu code is not set up right, the way yours is on the test site, but on hover could we have the background color turn to #2a99cb */
 }
 
@@ -395,13 +395,13 @@ a:hover {
 }
 
 .home-text a:hover {
-    color: #dda80b;
+    color: #CC4C27;
 }
 
 .box {
     border: none; /* 1px solid #d68645; */
     border-radius: 5px;
-    background: #f4f4f4;
+    background: #BFB8A9;
     padding: 10px;
     font-size: 15px;
     margin: 40px 15px 30px;
@@ -422,7 +422,7 @@ a:hover {
 }
 
 .box a:hover {
-    color: #fdd85b;
+    color: #CC4C27;
 }
 
 #news-flash {
@@ -482,23 +482,29 @@ a:hover {
 #top-task-section {
     background: aliceblue;
     margin: 20px 0;
-    border-radius:
 }
 
 #top-task-section h2 {
     width: 100%;
-    color: slategrey;
 }
 
 .top-task {
     min-width: 70px;
-    color: #1683bb;
+    color: #38518E;
     text-align: center;
+    padding: 0;
+}
+
+.top-task img {
+    width: 100%;
+    padding: 0;
+    border-radius: 5px;
 }
 
 .top-task a {
     text-decoration: none;
     font-weight: 800;
+    margin: 5px;
 }
 
 footer {
