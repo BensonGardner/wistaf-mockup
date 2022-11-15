@@ -593,7 +593,7 @@ footer em {
     
     #hamburger-menu {
         visibility: visible;
-        /* The hamburger menu icon may not be the best; I just wanted to put something there to demonstrate that there would be a hamburger menu in mobile */
+        /* The hamburger menu icon may not be the best and isn't functional; I just wanted to put something there to demonstrate that there would be a hamburger menu in mobile */
     }
     
     #site-title {
