@@ -383,15 +383,12 @@ a:hover {
 
 #homepage-sub-container {
     display: flex;
-    flex-flow: row-reverse;
-    justify-content: space-between;
-    max-width: 985px;
+    flex-flow: row wrap;
+    align-items: stretch;
 }
 
 .home-text {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
+    max-width: 650px;
 }
 
 .home-text > p {
@@ -484,9 +481,11 @@ a:hover {
 
 #top-task-boxes {
     font-family: "Kanit", "Source Sans Pro", "Myriad Pro", sans-serif;
-    display: flex;
-    flex-flow: row;
-    max-width: 650px;
+    display: ;
+    flex-flow: column;
+    min-width: 175px;
+    align-items: stretch;
+    max-width: 275px;
     justify-content: space-between;
     line-height: 1.1em;
 }
@@ -501,6 +500,7 @@ a:hover {
     margin: 20px 0;
 }
 
+/* Am I using this id? */
 #top-task-section h2 {
     width: 100%;
 }
@@ -511,6 +511,11 @@ a:hover {
     padding: 0 0 7px;
     flex: 1 1 0px;
 }
+
+.top-task:first-child, .top-task:last-child {
+    margin: 0 15px;
+}
+
 
 .top-task img {
     width: 100%;
@@ -644,9 +649,13 @@ footer em {
 /* Might be able to remove homepage sub container */
 @media only screen and (max-width: 1069px) {
     #homepage-sub-container {
-        flex-flow: column-reverse wrap;
+        flex-flow: column nowrap;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: stretch;
+    }
+    
+    #home-text {
+        flex-flow: column nowrap;   
     }
 }
 
@@ -654,7 +663,21 @@ footer em {
     
     #top-task-boxes {
         flex-flow: row nowrap;
-        width: auto;
+        max-width: 650px;
+    }
+    
+    .top-task {
+        margin: 40px 15px 30px;
+        min-width: 260px;
+        max-width: 260px;
+    }
+    
+    .top-task:first-child {
+        margin-left: 0;
+    }
+    
+    .top-task:last-child {
+        margin-right: 0;
     }
     
     .feature-text {
@@ -701,6 +724,12 @@ footer em {
     
     .top-task {
         margin: 15px 0;
+    }
+}
+
+@media only screen and (min-width: 1070px) {
+     #home-feature {
+        margin: -250px 25px 0 0;  
     }
 }
 
