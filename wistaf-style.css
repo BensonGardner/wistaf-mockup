@@ -127,7 +127,7 @@ nav a:link {
 nav a:hover {
     text-decoration: none;
     color: #CC4C27;
-    /* My menu code is not set up right, the way yours is on the test site, but on hover could we have the background color turn to #2a99cb */
+    /* My menu code is not set up right, the way yours is on the test site, but on hover could we have the background color turn to #BFB8A9 */
 }
 
 nav a:visited {
@@ -327,7 +327,7 @@ a:link {
 }
 
 a:visited {
-    color: #385191;
+    color: #388874;
     text-decoration: none;
 }
 
@@ -461,7 +461,7 @@ a:hover {
     padding: 3px 5px;
     border-radius: 0 5px 0 0;
     color:  #fafafa; /* #d68645;  /*#fee79c;  */
-    background-color: #1683bb; 
+    background-color: #A9CDD8 /*#1683bb*/; 
     /* color: #f6f6f6; */
     font-size: 18px;
     font-weight: 500;
@@ -489,6 +489,11 @@ a:hover {
     max-width: 650px;
     justify-content: space-between;
     line-height: 1.1em;
+}
+
+#top-task-boxes a:hover {
+    color: #38518E;
+    text-decoration: underline;
 }
 
 #top-task-section {
@@ -636,6 +641,7 @@ footer em {
     }
 }
 
+/* Might be able to remove homepage sub container */
 @media only screen and (max-width: 1069px) {
     #homepage-sub-container {
         flex-flow: column-reverse wrap;
