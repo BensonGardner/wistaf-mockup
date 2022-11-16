@@ -385,6 +385,7 @@ a:hover {
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
+    max-width: 1500px;
 }
 
 .home-text {
@@ -407,7 +408,7 @@ a:hover {
     background: #BFB8A9;
     padding: 10px;
     font-size: 15px;
-    margin: 40px 15px 30px;
+    margin: 30px;
 }
 
 .box:last-child {
@@ -441,7 +442,7 @@ a:hover {
     max-width: 650px;
     margin: 30px 0 0;
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 0;
@@ -482,7 +483,7 @@ a:hover {
 #top-task-boxes {
     font-family: "Kanit", "Source Sans Pro", "Myriad Pro", sans-serif;
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     min-width: 175px;
     align-items: stretch;
     max-width: 275px;
@@ -513,9 +514,8 @@ a:hover {
 }
 
 .top-task:first-child, .top-task:last-child {
-    margin: 0 15px;
+    margin: 0 30px;
 }
-
 
 .top-task img {
     width: 100%;
@@ -662,23 +662,19 @@ footer em {
 @media only screen and (min-width: 545px) and (max-width: 1069px) {
     
     #top-task-boxes {
-        flex-flow: row;
+        flex-flow: row nowrap;
         max-width: 650px;
         align-items: stretch;
+        margin-right: 30px; 
     }
     
     .top-task {
-        margin: 40px 15px 30px;
-        min-width: 260px;
+        margin: 30px 15px;
         max-width: 260px;
     }
     
-    .top-task:first-child {
-        margin-left: 0;
-    }
-    
-    .top-task:last-child {
-        margin-right: 0;
+    .top-task:first-child, .top-task:last-child {
+        margin: auto 0;
     }
     
     .feature-text {
@@ -714,11 +710,11 @@ footer em {
 @media only screen and (max-width: 544px) {
     
     .feature-box {
-        flex-flow: column;
+        flex-flow: column nowrap;
     }
     
     #top-task-boxes {
-        flex-flow: column;
+        flex-flow: column nowrap;
         min-width: 320px;
         align-items: stretch;
     }
@@ -730,7 +726,7 @@ footer em {
 
 @media only screen and (min-width: 1070px) {
      #home-feature {
-        margin: -250px 25px 0 0;  
+        margin: -200px 25px 0 0;  
     }
 }
 
