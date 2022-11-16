@@ -605,6 +605,64 @@ footer em {
     }
 }
 
+@media only screen and (max-width: 544px) {
+    
+    .feature-box {
+        flex-flow: column nowrap;
+    }
+    
+    #top-task-boxes {
+        flex-flow: column nowrap;
+        align-items: stretch;
+    }
+    
+    .top-task {
+        margin: 15px 0;
+    }
+    
+    .top-task:first-child, .top-task:last-child {
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: 590px) {
+    #scrl-btn {
+        left: 50%; 
+        top: auto;
+        bottom: 15%;
+        transform: translateX(-50%);
+    }
+    
+    #left-nav {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .col-sm-6 {
+        width: 50%;
+    }
+    
+    .col-sm-6 {
+        float: left;
+        margin: 15px;
+    }
+}
+
+@media only screen and (max-width: 1069px) {
+    #homepage-sub-container {
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        /* Is the following line doing anything */
+        align-items: stretch;
+    }
+    
+    #home-text {
+        flex-flow: column nowrap;   
+    }
+}
+
 @media only screen and (max-width: 1114px) {
 
     nav > ul {
@@ -630,32 +688,6 @@ footer em {
     
     #wistaf-logo {
         max-height: 43px;
-    }
-}
-
-@media only screen and (max-width: 590px) {
-    #scrl-btn {
-        left: 50%; 
-        top: auto;
-        bottom: 15%;
-        transform: translateX(-50%);
-    }
-    
-    #left-nav {
-        width: 100%;
-    }
-}
-
-/* Might be able to remove homepage sub container */
-@media only screen and (max-width: 1069px) {
-    #homepage-sub-container {
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: stretch;
-    }
-    
-    #home-text {
-        flex-flow: column nowrap;   
     }
 }
 
@@ -692,35 +724,6 @@ footer em {
         margin: auto;
         display: block;
         margin: auto 16px;
-    }
-
-}
-
-@media only screen and (min-width: 768px) {
-    .col-sm-6 {
-        width: 50%;
-    }
-    
-    .col-sm-6 {
-        float: left;
-        margin: 15px;
-    }
-}
-
-@media only screen and (max-width: 544px) {
-    
-    .feature-box {
-        flex-flow: column nowrap;
-    }
-    
-    #top-task-boxes {
-        flex-flow: column nowrap;
-        min-width: 320px;
-        align-items: stretch;
-    }
-    
-    .top-task {
-        margin: 15px 0;
     }
 }
 
