@@ -386,6 +386,7 @@ a:hover {
     flex-flow: row wrap;
     align-items: stretch;
     max-width: 1500px;
+    padding-right: 30px;
 }
 
 .home-text {
@@ -394,7 +395,7 @@ a:hover {
 
 .home-text > p {
     font-size: 18px;
-    margin: 0 30px 18px 0;
+    margin: 0 0 18px 0;
     max-width: 650px;
 }
 
@@ -614,6 +615,7 @@ footer em {
     #top-task-boxes {
         flex-flow: column nowrap;
         align-items: stretch;
+        min-width: 100%;
     }
     
     .top-task {
@@ -697,7 +699,6 @@ footer em {
         flex-flow: row nowrap;
         max-width: 650px;
         align-items: stretch;
-        margin-right: 30px; 
     }
     
     .top-task {
@@ -727,9 +728,13 @@ footer em {
     }
 }
 
-@media only screen and (min-width: 1070px) {
-     #home-feature {
-        margin: -200px 25px 0 0;  
+@media only screen and (min-width: 1069px) {
+    #home-feature {
+        margin: -200px 0 0;  
+    }
+    
+    #top-task-boxes {
+        margin-left: 30px;
     }
 }
 
