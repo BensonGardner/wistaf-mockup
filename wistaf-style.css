@@ -481,7 +481,7 @@ a:hover {
 
 #top-task-boxes {
     font-family: "Kanit", "Source Sans Pro", "Myriad Pro", sans-serif;
-    display: ;
+    display: flex;
     flex-flow: column;
     min-width: 175px;
     align-items: stretch;
@@ -662,8 +662,9 @@ footer em {
 @media only screen and (min-width: 545px) and (max-width: 1069px) {
     
     #top-task-boxes {
-        flex-flow: row nowrap;
+        flex-flow: row;
         max-width: 650px;
+        align-items: stretch;
     }
     
     .top-task {
