@@ -33,6 +33,7 @@ document.addEventListener('scroll', function(e) {
 // I patterned the scroll button code below on some example code at W3 schools.
 
 const scrlBtn = document.querySelector("#scrl-btn"),
+      scrlBtnHover = document.querySelector("#scrl-btn:hover"),
       leftNav = document.querySelector("#left-nav");
 
 // When the user scrolls down 300px from the top of the document, show the button
@@ -50,4 +51,5 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  scrlBtn.blur();
 }

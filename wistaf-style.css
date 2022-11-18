@@ -1,6 +1,6 @@
 body {
     background: #fff;
-    color: #2f3f3f;
+    color: #253232;
     font-family: "Noto Serif", "Newsreader", serif;
     /*If we stick with 400, delete this line bc 400 is the default font-weight: 400;*/
     letter-spacing: -0.2px;
@@ -84,7 +84,7 @@ header {
 }
 
 nav {
-    font-family: "Kanit", "Source Sans Pro", "Noto Serif", sans-serif; /*"Kanit"*/
+    font-family: "Noto Serif", "Kanit", serif; 
     text-decoration: none;
     list-style-type: none;
     padding: 0;
@@ -100,8 +100,8 @@ nav li {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 1.05rem;
-    font-weight: bolder;
+    font-size: 1.0rem;
+    font-weight: 600;
 }
 
 nav li::before {
@@ -121,10 +121,9 @@ nav li:first-of-type {
 
 nav a:link {
     color: #38518E;
-    font-weight: 300;
 }
 
-nav a:hover {
+nav a:hover, nav a:focus {
     text-decoration: none;
     color: #CC4C27;
     /* My menu code is not set up right, the way yours is on the test site, but on hover could we have the background color turn to #BFB8A9 */
@@ -137,17 +136,27 @@ nav a:visited {
 #donate {
     display: inline;
     background-color: #FFE2A1;
-   /* border: 1px solid #A3343D;
-*/    border-radius: 11px;
-    padding: 1px 8px 3px 10px;
-    color: #A3343D;
+    border-radius: 11px;
+    padding: 2px 8px 3px 10px;
     font-family: "Kanit", "Source Sans Pro";
     font-size: 1.4rem;
     margin-left: 15px;
+    font-weight: 400;
 }
 
-#donate a:hover {
-    text-decoration: underline;
+#donate a {
+    font-weight: 400;
+}
+
+#donate:hover, #donate:focus {
+    background-color: #D7D5D5;
+    border: 2px solid #2F7463;
+    padding: 0 8px 1px;
+}
+
+#donate a:hover, #donate a:focus {
+    color: #38518E; /*#2F7463*/;
+    border: none;
 }
 
 #page-content-container {
@@ -173,12 +182,8 @@ main {
     background-color: white;
     font-size: 17px;
     padding: 0 15px;
-    /*padding: 50px;
-/*    margin-left: 110px;*/ 
     flex: 1 1 0;
     max-width: 650px;
-    /*163px;
-    /*box-shadow: 0px 0px 6px 6px rgb(ff ff ff / 20%);*/
 }
 
 #homepage-content {
@@ -188,7 +193,7 @@ main {
 }
 
 #left-nav {
-    background-color: #FFE2A1; /*#f4f4f4;*/
+    background-color: #FFE2A1; 
     width: 225px;
     /* Set limit on size and number of links in left-nav */
     max-height: 400px;
@@ -206,12 +211,16 @@ main {
     padding: 0;
 }
 
+#left-nav a:link {
+    color: #38518E;
+}
+
 .left-menu-title {
     font-family: "Kanit", "Source Sans Pro", sans-serif;
     font-weight: 600;
     font-size: 17px;
     margin: -5px 0 -10px 0;
-    color: #38518E; /* #595f59;  #d68645; */
+    color: #486060;
 }
 
 #left-nav:empty {
@@ -238,17 +247,10 @@ main {
     padding-bottom: 0;
 }
 
-#left-nav a:link {
-    font-weight: 500;
-}
-
 #scrl-btn {
   display: block; 
   opacity: 0;
   position: fixed;
-/*  left: 50%;
-  transform: translateX(-50%);*/
-  /* This didn't work in short windwos  bottom: 320px; */
   top: 50%;
   left: 115px;
   z-index: 20; /* Make sure it is covered by footer and left-nav and header but nothing else  */
@@ -261,12 +263,10 @@ main {
   padding: 10px; 
   font-size: 18px;
   line-height: 1.6em;
-  /*animation: fadeIn 0.6s;
-  animation: fadeOut 0.6s; */
   transition: opacity 0.4s;
 }
 
-#scrl-btn:hover {
+#scrl-btn:hover, #scrl-btn:focus {
   background-color: #FFE2A1;
   color: #38518E;
 }
@@ -282,7 +282,7 @@ h1, h2 {
 
 h1 {
     font-size: 2.6rem;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 h2 {
@@ -318,7 +318,7 @@ ul {
 }
 
 a {
-    font-weight: 800    
+    font-weight: bold;    
 }
 
 a:link {
@@ -326,21 +326,20 @@ a:link {
     text-decoration: none;
 }
 
-a:visited {
-    color: #388874;
-    text-decoration: none;
+a:hover, a:focus {
+    color: #CC4C27;
+    text-decoration: underline;
 }
 
-a:hover {
-    text-decoration: underline;
+a:visited {
+    color: #388874;
 }
 
 .giant-emphasis {
     font-size: 52px;
     color: #385191; 
-    /*color: #0B73B1; */
     font-family: "Source Sans Pro", "Lato", sans-serif;
-    font-weight: 700; /*600;*/
+    font-weight: 700;
     margin: 0.25em auto 0.8em;
     line-height: 1.15;
     max-width: 100%;
@@ -353,11 +352,14 @@ a:hover {
     font-weight: 600;
     margin: 0 auto 0.6em 0;
     line-height: 1.1;
-    /*max-width: 100%;*/
 }
 
 .lesser-emphasis a {
     text-decoration: underline;
+}
+
+.lesser-emphasis a:hover, .lesser-emphasis a:focus {
+    text-decoration: none;
 }
 
 .centered-container {
@@ -367,18 +369,12 @@ a:hover {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    /*display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;*/
 }
 
-#home-container {
+#container {
     margin: 0 0 -50px 0px;
     padding-bottom: 100px;
-    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.7), rgba(255,255,255,0));
-    z-index: 2;
-    position: relative;
+    padding-bottom: 100px;
 }
 
 #homepage-sub-container {
@@ -399,15 +395,10 @@ a:hover {
     max-width: 650px;
 }
 
-.home-text a:hover {
-    color: #CC4C27;
-}
-
 .box {
-    border: none; /* 1px solid #d68645; */
+    border: none; 
     border-radius: 5px;
-    background: #BFB8A9;
-    padding: 10px;
+    background: #A9CDD8;
     font-size: 15px;
     margin: 30px;
 }
@@ -426,22 +417,37 @@ a:hover {
     font-weight: 500;
 }
 
-.box a:hover {
+.box a:hover, .box a:focus {
     color: #CC4C27;
+    text-decoration: none;
 }
 
-#news-flash {
-    display: none;
-    max-width: 985px; 
+.box-title {
+    margin: 0;
+    background: #A9CDD8;
+    padding: 3px 5px;
+    border-radius: 0 5px 0 0;
+    color:  #385191;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Kanit", "Source Sans Pro", "Myriad Pro", sans-serif;
+    text-align: center;
 }
 
-#news-flash > p {
-    max-width: 100%;
+.box-text {
+    background-color: #385191;
+    align-self: stretch;
+    border-radius: 0 4px 4px 0;
+    color: aliceblue;
+}
+
+.box-text a:hover, .box-text a:focus {
+    color: #FED107;
 }
 
 .feature-box {
     max-width: 650px;
-    margin: 30px 0 0;
+    margin: 30px 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -449,27 +455,8 @@ a:hover {
     padding: 0;
 }
 
-.feature-text {
-    background-color: #385191;
-    align-self: stretch;
-    border-radius: 0 5px 5px 0;
-}
-
-.feature-box-title {
-    margin: 0;
-    padding: 3px 5px;
-    border-radius: 0 5px 0 0;
-    color:  #fafafa; /* #d68645;  /*#fee79c;  */
-    background-color: #A9CDD8 /*#1683bb*/; 
-    /* color: #f6f6f6; */
-    font-size: 18px;
-    font-weight: 500;
-    font-family: "Kanit", "Source Sans Pro", "Myriad Pro", sans-serif;
-    text-align: center;
-}
-
-.feature-box-image {
-    max-width: 150px;
+.feature-box img {
+    max-width: 100%;
     text-align: center;
     margin: 16px 10px;
     display: block;
@@ -479,6 +466,15 @@ a:hover {
     padding: 15px;
     margin: 0;
     color: aliceblue;
+}
+
+#prime-partner-feature {
+    border: 2px solid #38518e;
+    background: white;
+}
+
+#prime-partner-logo {
+    max-width: 150px;
 }
 
 #top-task-boxes {
@@ -492,26 +488,48 @@ a:hover {
     line-height: 1.1em;
 }
 
-#top-task-boxes a:hover {
+.img-caption {
+    flex-flow: column nowrap;
+    max-width: 300px; 
+    float: right;
+    margin: 10px 0 10px 10px;
+    background: #38518e;
+}
+
+.img-caption > .box-text {
+    border-radius: 0 0 4px 4px;
+}
+
+.img-caption p {
+    padding-top: 0;
+}
+
+.news-flash {
+    max-width: 921px;
+    background-color: #A3343D;
+}
+
+.news-flash > h2 {
+    color: white;
+    margin: 15px;
+}
+
+.news-flash > p {
+    max-width: 100%;
+}
+
+#top-task-boxes a:hover, #top-task-boxes a:focus {
     color: #38518E;
     text-decoration: underline;
 }
 
-#top-task-section {
-    background: aliceblue;
-    margin: 20px 0;
-}
-
-/* Am I using this id? */
-#top-task-section h2 {
-    width: 100%;
-}
-
 .top-task {
     color: #38518E;
+    background-color: #FFE2A1;
     text-align: center;
     padding: 0 0 7px;
     flex: 1 1 0px;
+    text-align: center;
 }
 
 .top-task:first-child, .top-task:last-child {
@@ -527,7 +545,6 @@ a:hover {
 .top-task a {
     text-decoration: none;
     font-weight: 800;
-    margin: 7px;
 }
 
 footer {
@@ -559,13 +576,18 @@ footer p {
 }
 
 footer a:link {
-    color: #fff; /*#A9CDD8;*/
+    color: #fff;
     text-decoration: underline;
     font-weight: 800;
 }
 
+footer a:hover, footer a:focus {
+    color: #FFE2A1;
+    text-decoration: none;
+}
+
 footer a:visited {
-    color: #fff; /*#A9CDD8;*/
+    color: #fff; 
 }
 
 footer em {
@@ -612,6 +634,10 @@ footer em {
         flex-flow: column nowrap;
     }
     
+    .box-text {
+        border-radius: 0 0 4px 4px;
+    }
+    
     #top-task-boxes {
         flex-flow: column nowrap;
         align-items: stretch;
@@ -626,7 +652,6 @@ footer em {
         margin: 0;
     }
 }
-
 
 @media only screen and (max-width: 590px) {
     #scrl-btn {
@@ -719,8 +744,8 @@ footer em {
         margin: 0;
     }
     
-    .feature-box-image {
-        max-width: 150px;
+    .feature-box img {
+        max-width: 100%;
         text-align: center;
         margin: auto;
         display: block;
@@ -729,7 +754,7 @@ footer em {
 }
 
 @media only screen and (min-width: 1069px) {
-    #home-feature {
+    #homepage-sub-container > .feature-box {
         margin: -200px 0 0;  
     }
     
