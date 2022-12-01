@@ -153,8 +153,10 @@ nav a:visited {
     padding-left: 30px;
 }
 
+/* Zoltan, I see that something is going wrong with the LinkedIn icon and also 
+that the Twitter icon should be a smaller size. Hoping you can help with these things? */
 #social-icons img {
-    width: 25px;
+    height: 21px;
     padding: 0 3px;
 }
 
