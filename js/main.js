@@ -8,11 +8,15 @@ let lastKnownScrollPosition = 0,
 //If possible, please add a short transition to the logo resizing
 function resizeHeader(scrollSinceLast) {
     if (scrollSinceLast > 0) {
-        header.classList.add("shrunk");
-        logo.style.maxHeight = "43px"; 
+        header.classList.add("shrunk");    
+        logo.classList.add("shrunk");
+        logo.classList.remove("full-size");
+        console.log(logo);
     } else if (window.scrollY < 5)  {
         header.classList.remove("shrunk");
-        logo.style.maxHeight = "90px";
+        logo.classList.add("full-size");
+        logo.classList.remove("shrunk");
+        console.log(logo);
     }
 }
 
