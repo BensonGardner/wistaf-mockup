@@ -24,9 +24,6 @@ header {
 }
 
 .tagline {
-/*    color: #FED107;
-    font-size: 18px;
-    font-family: "Kanit", sans-serif;*/
     width: 400px;
     display: inline-block;
     position: absolute;
@@ -409,7 +406,7 @@ a:visited {
     margin: 0;
     background: #A9CDD8;
     padding: 3px 5px;
-    border-radius: 0 5px 0 0;
+    border-radius: 5px 5px 0 0;
     color:  #385191;
     font-size: 18px;
     font-weight: 500;
@@ -420,7 +417,7 @@ a:visited {
 .box-text {
     background-color: #385191;
     align-self: stretch;
-    border-radius: 0 4px 4px 0;
+    border-radius: 5px;
     color: aliceblue;
 }
 
@@ -441,7 +438,6 @@ a:visited {
 .feature-box img {
     max-width: 100%;
     text-align: center;
-    margin: 16px 10px;
     display: block;
 }
 
@@ -454,10 +450,16 @@ a:visited {
 #prime-partner-feature {
     border: 2px solid #38518e;
     background: white;
+    margin: 15px 0;
+}
+
+#prime-partner-feature > .box-text {
+    border-radius: 0 4px 4px 0;
 }
 
 #prime-partner-logo {
     max-width: 150px;
+    margin: 16px 10px;
 }
 
 #top-task-boxes {
@@ -484,8 +486,12 @@ a:visited {
     border-radius: 0 0 4px 4px;
 }
 
-.img-caption p {
+.img-caption > p {
     padding-top: 0;
+}
+
+.img-caption > img {
+    border-radius: 5px 5px 0 0;
 }
 
 .news-flash {
@@ -624,7 +630,7 @@ footer em {
         flex-flow: column nowrap;
     }
     
-    .box-text {
+    #prime-partner-feature > .box-text {
         border-radius: 0 0 4px 4px;
     }
     
@@ -639,7 +645,7 @@ footer em {
     }
     
     .top-task:first-child, .top-task:last-child {
-        margin: 0;
+        margin: 25px 0;
     }
 }
 
@@ -681,12 +687,18 @@ footer em {
     }
 }
 
+@media only screen and (max-width: 850px) {
+    .img-caption {
+        max-width: none;
+        float: none;
+        margin: auto;
+    }
+}
+
 @media only screen and (max-width: 1023px) {
     #homepage-sub-container {
         flex-flow: column nowrap;
         justify-content: space-between;
-        /* Is the following line doing anything */
-        align-items: stretch;
     }
     
     #home-text {
