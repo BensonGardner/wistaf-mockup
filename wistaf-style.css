@@ -355,9 +355,10 @@ a:visited {
     z-index: 1;
     position: fixed;
     right: 80px;
-    top: 160px;
+    top: 125px;
     max-width: 50%;
     opacity: 50%; 
+    min-width: 268px;
 }
 
 #container {
