@@ -767,8 +767,18 @@ footer em {
     }
 }
  
-@media only screen and (min-width: 1023px) {
-    
+@media only screen and (min-width: 1024px) and (max-width: 1047px) {
+    /* Put an additional white fade on the home page background image at screen sizes where it would otherwise make the text hard to read */
+    #home-container {
+        background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.9), rgba(255,255,255,0));
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+    #home-image {
+        right: auto;
+        left: 800px;
+    }
 }
 
 /* For accessibility */
