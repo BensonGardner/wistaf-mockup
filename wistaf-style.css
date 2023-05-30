@@ -658,6 +658,7 @@ footer em {
     
     .top-task {
         margin: 15px 0;
+        max-width: none;
     }
     
     .top-task:first-child, .top-task:last-child {
