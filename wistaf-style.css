@@ -366,17 +366,20 @@ a:visited {
     padding-bottom: 100px;
     background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0.7), rgba(255,255,255,0));
     z-index: 2;
+    position: relative;
 }
 
 #homepage-sub-container {
     display: flex;
-    flex-flow: row wrap;
     align-items: stretch;
     max-width: 1500px;
     padding-right: 30px;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
-
+    
 .home-text {
+    flex-flow: column nowrap;   
     max-width: 650px;
 }
 
@@ -476,11 +479,11 @@ a:visited {
 #top-task-boxes {
     font-family: "Kanit", "Source Sans Pro", "Myriad Pro", sans-serif;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
+    max-width: 650px;
     flex: 1 3 0;
     min-width: 175px;
     align-items: stretch;
-    max-width: 275px;
     justify-content: space-between;
     line-height: 1.1em;
 }
@@ -526,10 +529,12 @@ a:visited {
     padding: 0 0 7px;
     flex: 1 1 0px;
     text-align: center;
+    margin: 30px 15px;
+    max-width: 260px;
 }
 
 .top-task:first-child, .top-task:last-child {
-    margin: 0 30px;
+    margin: auto 0;
 }
 
 .top-task img {
@@ -707,17 +712,6 @@ footer em {
 }
 
 @media only screen and (max-width: 1023px) {
-    #homepage-sub-container {
-        flex-flow: column nowrap;
-        justify-content: space-between;
-    }
-    
-    #home-text {
-        flex-flow: column nowrap;   
-    }
-}
-
-@media only screen and (max-width: 1023px) {
 
     .navigation {
         display: none;
@@ -755,21 +749,6 @@ footer em {
 
 @media only screen and (min-width: 545px) and (max-width: 1023px) {
     
-    #top-task-boxes {
-        flex-flow: row nowrap;
-        max-width: 650px;
-        align-items: stretch;
-    }
-    
-    .top-task {
-        margin: 30px 15px;
-        max-width: 260px;
-    }
-    
-    .top-task:first-child, .top-task:last-child {
-        margin: auto 0;
-    }
-    
     .feature-text {
         margin: 0;
         max-width: 500px;
@@ -787,15 +766,9 @@ footer em {
         margin: auto 16px;
     }
 }
-
+ 
 @media only screen and (min-width: 1023px) {
-    #homepage-sub-container > .feature-box {
-        margin: -200px 0 0;  
-    }
     
-    #top-task-boxes {
-        margin-left: 30px;
-    }
 }
 
 /* For accessibility */
