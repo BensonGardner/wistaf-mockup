@@ -231,7 +231,7 @@ main {
   display: block; 
   opacity: 0;
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 115px;
   z-index: 20; /* Make sure it is covered by footer and left-nav and header but nothing else  */
   border-radius: 30px;
